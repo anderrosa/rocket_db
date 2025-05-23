@@ -13,7 +13,7 @@ class RegistryOrder:
             new_order = self.__format_new_order(body)
             self.__registry_order(new_order)
 
-            return self.__format_response
+            return self.__format_response()
         except Exception as exception:
             return HttpResponse(
                 body= { "error": exception },
