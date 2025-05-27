@@ -40,7 +40,7 @@ class OrdersRepository(OrdersRepositoryInterface):
         )
         return data
 
-    def select_by_select_id(self, object_id: str) -> dict:
+    def select_by_object_id(self, object_id: str) -> dict:
         collection = self.__db_connection.get_collection(self.__collection_name)
         data = collection.find_one({ "_id": ObjectId(object_id) })
         return data

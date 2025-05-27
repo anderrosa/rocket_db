@@ -27,7 +27,7 @@ class OrdersRepositoryInterface(ABC):
         pass
 
     @abstractmethod
-    def select_by_select_id(self, object_id: str) -> dict:
+    def select_by_object_id(self, object_id: str) -> dict:
         pass
 
     @abstractmethod
