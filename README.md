@@ -1,5 +1,3 @@
-Markdown
-￼
 # 🚀 Rocket DB: Sistema API para Gerenciamento de Ordens com MongoDB
 
 ---
